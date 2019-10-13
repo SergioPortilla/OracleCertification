@@ -8,7 +8,7 @@ import java.io.IOException;
 public class FileReaderJava8 {
 
     public static String fileReaderOutput() throws IOException{
-        FileReader fr = new FileReader("java8\\questions\\certified\\new.txt");
+        FileReader fr = new FileReader("src/java8/questions/certified/material/new.txt");
         try{
             return "valor: "+ fr;
         } finally {
