@@ -1,7 +1,5 @@
 package java8.questions.certified.java808;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.io.FileReader;
 import java.io.IOException;
 
