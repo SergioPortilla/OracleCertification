@@ -13,6 +13,7 @@ public class Main {
         //HandingExceptions handingExceptions = new HandingExceptions();
         //handingExceptions.este(args[0]);
         System.out.println(ComparatorJava8.nullLastPrint());
+        System.out.println(FileReaderJava8.fileReaderOutput());
         System.out.println(ExceptionsJava8.arrayIndexOutOfBoundsExeption());
         System.out.println(StreamsJava8.concatOutput());
     }
