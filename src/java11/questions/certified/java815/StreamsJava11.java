@@ -7,5 +7,7 @@ public class StreamsJava11 {
         Stream<Integer> numStream = Stream.of(10, 20, 30);
 //        numStream.map(n -> n + 10).peek(s -> System.out.print(s));
         numStream.forEach(s -> System.out.println(s));
+        Integer s = null;
+        System.out.println(s);
     }
 }
