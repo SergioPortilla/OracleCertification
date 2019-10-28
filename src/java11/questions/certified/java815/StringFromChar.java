@@ -16,6 +16,9 @@ public class StringFromChar {
             System.out.println(b1+ " " + b2);
 
         }
+    public static int[ ] getArray() {
+            return null;
+    }
 //        public static void main(String[] args){
 //            short s = 9;
 //            Short k = 9; System.out.println( k instanceof s);
