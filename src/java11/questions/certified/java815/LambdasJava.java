@@ -66,6 +66,13 @@ public class LambdasJava {
     public static void supplierInterface(){
         Supplier<String> cadena = () -> "Ejemplo de Proveedor";
         System.out.println(cadena.get());
+
+        class Employee{
+            int age;
+        }
+        Employee e = new Employee();
+        Supplier<Employee> se = ()->{ e.age = 40; return e; };
+        System.out.println(se.get().age);
     }
 
     public static void consumerInterface(){
