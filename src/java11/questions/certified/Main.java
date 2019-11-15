@@ -17,7 +17,7 @@ public class Main {
 //        LambdasJava.supplierInterface();
 
         //other
-//        StringFromChar.StringFromChar();
+//        StringsJava.StringFromChar();
 
 //        Repeat repeat = new Repeat();
 //        System.out.println(repeat.repeatVar());
@@ -30,7 +30,7 @@ public class Main {
         //String
 //        StringsJava.stripAndTrim();
 //        StringsJava.StringFromChar();
-        StringsJava.crazyLoop();
+//        StringsJava.crazyLoop();
 
 
 
