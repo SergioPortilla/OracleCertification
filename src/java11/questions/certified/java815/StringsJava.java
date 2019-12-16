@@ -56,32 +56,33 @@ import java.util.Stack;
 //        System.out.println("nada".substring(0));
 //    }
 //}
-class Automobile{
-    public void drive() {  System.out.println("Automobile: drive");   }
-}
-
- class Truck extends Automobile{
-    public void drive() {  System.out.println("Truck: drive");   }
-    public static void main (String args [ ]){
-        Automobile  a = new Automobile();
-        Truck t  = new Truck();
-        a.drive(); //1
-        t.drive(); //2
-        a = t;     //3
-        a.drive(); //4
-    }
-}
 
 public class StringsJava {
+//    public static void main(String[] args) {
+////        String[] este = {"s",null};
+////        System.out.println(este[1]);
+//        new StringsJava();
+//    }
+//    public StringsJava() {
+//        System.out.println(this);
+//        Stack s;
+//    }
     public static void main(String[] args) {
-//        String[] este = {"s",null};
-//        System.out.println(este[1]);
-        new StringsJava();
+        int i = 5;
+        switch (i){
+            default:
+                case 1:
+                    System.out.println(1);
+                case 0:
+                    System.out.println(0);
+                case 2:
+                    System.out.println(2);
+                    break;
+                case 3:
+                    System.out.println(3);
+        }
     }
-    public StringsJava() {
-        System.out.println(this);
-        Stack s;
-    }
+
 }
 
 
@@ -100,3 +101,5 @@ class Game{
 //        g.play();
 //    }
 //}
+
+

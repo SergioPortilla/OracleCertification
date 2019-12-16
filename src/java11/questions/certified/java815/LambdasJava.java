@@ -96,4 +96,19 @@ public class LambdasJava {
         Predicate<String> p = x->"".equals(x);
 //        strList.forEach();
     }
+
+
+//    interface Tool{    //1
+//        void operate(); //
+//    }
+//    abstract class PowerTool implements Tool{ } //3
+//    class PowerSaw implements PowerTool{  //4
+//        @Override //5
+//        public void operate(){ }
+//    }
+//    class SteamPowerSaw extends PowerSaw{ //6
+//        @Override //7
+//        public void operate(int pressure){ }
+//    }
+
 }
