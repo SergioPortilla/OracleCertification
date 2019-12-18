@@ -103,3 +103,43 @@ class Game{
 //}
 
 
+class Domestico {
+    public static void alimentar() {
+//  protected static void sM1() {                                       ✔ Acepta tanto protected como public en el extends
+        System.out.println("In base static");
+    }
+}
+class Perro extends Domestico {
+    public static void alimentar() {
+        System.out.println("In sub static");
+    }
+    //public void sM1() {  System.out.println("In sub non-static"); }   ❌ Para extender debe ser igualmente estatico
+
+}
+class Gato extends Domestico {
+
+}
+class Pez extends Domestico {
+
+}
+class Labrador extends Perro {
+
+}
+class prueba {
+    public static void main(String[] args) {
+        Domestico labrador = new Labrador();
+        System.out.println(prueba.tipoAnimal(labrador));
+
+    }
+    public static String tipoAnimal(Domestico domestico){
+        String tipodeAnimal = "ninguno";
+        if (domestico instanceof Perro) {
+            tipodeAnimal = "perro";
+        } else if (domestico instanceof Gato) {
+            tipodeAnimal = "gato";
+        } else if (domestico instanceof Pez) {
+            tipodeAnimal = "Pez";
+        }
+        return tipodeAnimal;
+    }
+}

@@ -42,6 +42,9 @@ public class Main {
 //            Short k = 9; Integer i = 9; System.out.println(k == i);
 //            Integer i = 9; System.out.println( s == i );
 //        }
+
+        //Implementations
+        ImplementationsJava.extendsUse();
     }
 }
 
