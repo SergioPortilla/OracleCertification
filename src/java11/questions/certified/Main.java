@@ -7,14 +7,19 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         //Streams
-//        StreamsJava.streamsMaps();
-//        StreamsJava.streamsForEach();
+//        StreamExcercise();
 
         //Lambda
-//        LambdasJava.interfaceImplements();
-//        LambdasJava.functionInterface();
-//        LambdasJava.supplierInterface();
-//        LambdasJava.supplierInterface();
+//        lambdasExercise();
+
+        //String
+//        StringsExcercise();
+
+        //Implementations
+//        ImplementationsJava.extendsUse();
+
+        //Exceptions
+        ExceptionsExcercise();
 
         //other
 //        StringsJava.StringFromChar();
@@ -23,16 +28,6 @@ public class Main {
 //        System.out.println(repeat.repeatVar());
 //        ListJava11.trySplitCadena();
 //        SobrecargaMetodosJava11.sobrecargaMetodos();
-
-//        varLocalVariable.varAsignacionValores();
-//        varLocalVariable.varRepeatMethod();
-
-        //String
-//        StringsJava.stripAndTrim();
-//        StringsJava.StringFromChar();
-//        StringsJava.crazyLoop();
-
-
 
 //        public static void main(String[] args){
 //            short s = 9;
@@ -43,9 +38,36 @@ public class Main {
 //            Integer i = 9; System.out.println( s == i );
 //        }
 
-        //Implementations
-        ImplementationsJava.extendsUse();
+    }
+
+    protected static void lambdasExercise() {
+        LambdasJava.interfaceImplements();
+        LambdasJava.functionInterface();
+        LambdasJava.supplierInterface();
+        LambdasJava.supplierInterface();
+    }
+
+    protected static void StreamExcercise() {
+        StreamsJava.streamsMaps();
+        StreamsJava.streamsForEach();
+    }
+
+    protected static void StringsExcercise() {
+//        StringsJava.stripAndTrim();
+//        StringsJava.StringFromChar();
+//        StringsJava.crazyLoop();
+    }
+
+    protected static void ExceptionsExcercise() {
+        try {
+            ExceptionsJava.exceptionOrder();
+        } catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
+    protected static void VarExcercise() {
+        varLocalVariable.varAsignacionValores();
+        varLocalVariable.varRepeatMethod();
     }
 }
-
-

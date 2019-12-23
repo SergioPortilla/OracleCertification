@@ -38,6 +38,14 @@ class something {
         System.out.println("Despl\t\t"+ (1011>>>1111));
         System.out.println("Despl\t\t"+ (1011<<1111));
 
+        int z = 0;
+        for(;z++<9;){
+            System.out.println(z);
+            if (z<=7) {
+                continue;
+            }
+            System.out.println("algo");
+        }
 
         if( (i==++j) | (i++ == j) ){
 //      if( (2==++j) | (i++ == j) ){
@@ -47,5 +55,28 @@ class something {
         System.out.println(i);
         int a = 1;
         int b = 1;
+
+
+        int c = 0;
+        A: for(int d = 0; d < 2; d++){
+            B: for(int e = 0; e < 2; e++){
+                C: for(int f = 0; f < 3; f++){
+                    c++;
+                    if(f>e) break;
+                }
+            }
+        }
+        System.out.println(c);
+
+        System.out.println("una forma");
+        for(int g = 0; g<2; g++) {
+            for (int h = 0; h <2; h++) {
+                System.out.println(h+" "+g);
+            }
+        }
+        System.out.println("otra forma");
+        for(int g = 0, h = 0; g<2 ; h=(h<2? ++h : 0),g =(h<2? g : ++g))System.out.println(h+" "+g);
+
     }
+
 }
