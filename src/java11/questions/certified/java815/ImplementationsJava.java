@@ -4,10 +4,7 @@ package java11.questions.certified.java815;
 
 /* 2. *****************************************************************************************************************/
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 class Excercise2A{
     int i = 10;
@@ -166,4 +163,153 @@ class Desrived extends Bassdse {
 //     public <T> HashSet<Long> transform(Collection<? extends Number> list) { return new HashSet<>();}; //5
 //     public <T> Collection<Long> transform(Collection<? extends Number> list) { return new HashSet<>();}; //5
 //     public <T> List<? extends Number> transform(Collection<? extends Number> list) { return new ArrayList<Long>();}; //5
+}
+
+class Eagle {
+    public String name;
+    public Eagle(String name){
+        this.name = name;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Eagle("Bald Eagle").name);
+    }
+}
+
+class TestoClass {
+
+    static public final void main(String args[]) {
+        long a = 'a';
+        int b = 0;
+        System.out.println(a+b);
+        double numero = 3;		// Compila correctamente.
+        int otroNumero = 4;
+        numero = otroNumero;
+        System.out.println(numero);
+    }
+}
+
+class Aa {
+    int i = 10;
+
+    int m1() {
+        return i;
+    }
+}
+
+class Ba extends Aa {
+    int i = 20;
+
+    int m1() {
+        return i;
+    }
+}
+
+class Ca extends Ba {
+    int i = 30;
+
+    int m1() {
+        return i;
+    }
+}
+
+class Asss{
+    public List<Number> getList(){
+        return null;
+    };
+}
+class Bsss extends Asss{
+    public ArrayList<Number> getList(){
+        return null;
+    };
+}
+
+/**
+ * The type Test class.
+ */
+class TestClass{
+//    public static void main(String args[]){
+//        Stack s1 = new Stack ();
+//        Stack s2 = new Stack ();
+//        processStacks (s1, s2);
+//        System.out.println (s1 + "    "+ s2);
+//    }
+//    public static void processStacks(Stack x1, Stack x2){
+//        x1.push (new Integer ("100")); //assume that the method push adds the passed object to the stack.
+//        x2 = x1;
+//    }
+
+//    public static void main(String[] args) throws Exception {
+//        String[] sa = {"a", "b", "c"};
+//        for (String s : sa) {
+//            if ("b".equals(s)) continue;
+//            System.out.println(s);
+//            if ("b".equals(s)) break;
+//            System.out.println(s + " again");
+//        }
+//    }
+
+//    public static void main(String[] args) {
+//        int[] a = {1, 2, 3, 4, 5};
+//        int[] b = {1, 2, 3, 4, 5, 3};
+//        int[] c = {1, 2, 3, 4, 5, 4};
+//        int x = Arrays.compare(a, c);
+//        int y = Arrays.compare(b, c);
+//        System.out.println(x + " " + y);
+//    }
+class MyException extends Exception {}
+public static void main(String[] args){
+    TestClass tc = new TestClass();
+    try{
+        tc.m1();
+    }
+    catch (MyException e){
+//        tc.m1();
+    }
+    finally{
+        tc.m2();
+    }
+}
+    public void m1() throws MyException{
+        throw new MyException();
+    }
+    public void m2() throws RuntimeException{
+        throw new NullPointerException();
+    }
+
+    class TestClasss implements T1, T2 {
+        public void m1() {
+        }
+        int VALUE;
+    }
+
+    interface T1 {
+        int VALUE = 1;
+
+        void m1();
+    }
+
+    interface T2 {
+        int VALUE = 2;
+
+        void m1();
+    }
+}
+
+class Basse {
+    public <T> List<T> transform(List<T> list) {
+        return new ArrayList<T>();
+    }
+}
+
+class Deriveds extends Basse {
+    public <T extends CharSequence> Collection<String> transform(Collection<T> list)    {
+        return new ArrayList<String>();
+    }
+
+    class Derived extends Base {
+        public <T extends String> Collection<T> transform(Collection<T> list) {
+            return new HashSet<T>();
+        }
+    }; //2        //public <T extends CharSequence> List<T> transform(Collection<T> list) { return new ArrayList<T>(); }; //3        //public <T extends CharSequence> Collection<T> transform(List<T> list) { return new HashSet<T>(); }; //4         //public <T super String> Collection<T> transform(List<String> list) { return new HashSet<T>(); };//5        //public  Collection<CharSequence> transform(Collection<CharSequence> list) { return new HashSet<CharSequence>();}; //6 }
 }
